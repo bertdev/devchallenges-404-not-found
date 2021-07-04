@@ -1,0 +1,92 @@
+/* font imports 
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Space Mono', monospace;*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700;500&family=Space+Mono:wght@400;700&display=swap');
+
+/* mini reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* general styles */
+.grid {
+  display: grid;
+  grid-template-areas: 
+    "header" 
+    "main"
+    "footer"
+  ;
+}
+
+header {
+  grid-area: header;
+}
+
+.logo {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing:  -0.08em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+main {
+  grid-area: main;
+  font-family: 'Space Mono', monospace;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333;
+}
+
+.message {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #FFF;
+  border: none;
+  background-color: #333;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.credits {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #BDBDBD;
+}
+
+.credits a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}
